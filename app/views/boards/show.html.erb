@@ -3,14 +3,14 @@
 <p id="display">Board Id : <%= @board.id %></p>
 <p id="display3">Board Name : <%= @board.name %></p>
 <div> <% if @board.current_player == 1 %>
-	<p id="display1" style ="color:green">Player To Roll Die : 1 </p>
+	<p id="display1" style ="color:red">Player To Roll Die : 1 </p>
 	<% else %>
-	<p id="display1" style ="color:red">Player To Roll Die : 2 </p>
+	<p id="display1" style ="color:green">Player To Roll Die : 2 </p>
 	<% end %>
 </div>
 	
 <p id="display4">Waiting for Player : <%= @board.current_player %> </p> 
-<table class="joshi">
+<table class="tables">
 <span class="jo"><img class="image1" src="/jo1.gif"/></span>
 <span class="jo"><img class="image2" src="/jo.png"/></span>
 <img id="three" src="/snake1.png"/>
@@ -69,13 +69,13 @@ var p2_pos = <%= @board.p2_position %>;
 $(document).ready(function(){
 $('.edit_board').hide();
 for(var i = 0; i<10; i++) {
-$('.joshi').append('<tr></tr>');
+$('.tables').append('<tr></tr>');
 for(var j = 0; j <10; j++) {
 if(i%2==0){
-$('.joshi').find('tr').eq(i).append('<td id='+((q*10)-(j))+'>'+((q*10)-(j))+'</td>');
+$('.tables').find('tr').eq(i).append('<td id='+((q*10)-(j))+'>'+((q*10)-(j))+'</td>');
 }
 else{
-$('.joshi').find('tr').eq(i).append('<td id='+(((q-1)*10)+(j+1))+'>'+(((q-1)*10)+(j+1))+'</td>');
+$('.tables').find('tr').eq(i).append('<td id='+(((q-1)*10)+(j+1))+'>'+(((q-1)*10)+(j+1))+'</td>');
 }
 }
 q--;
