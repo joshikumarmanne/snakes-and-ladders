@@ -12,17 +12,17 @@
 <%= f.submit "Submit"  %>
 <% end %>
 
-<table>
+<table class="table">
 <tr>
-	<td>I.D</td>
-	<td>Board Name</td>
-		<td>Join</td>
+	<td class="indextd">I.D</td>
+	<td class="indextd">Board Name</td>
+		<td class="indextd">Join</td>
 		</tr>
 		<% @boards.each do |p| %>
 		<tr>
-			<td><%= p.id %></td>
-			<td><%= p.name %></td>
-		<td><%= link_to "Join table",p %></td>
+			<td class="indextd"><%= p.id %></td>
+			<td class="indextd"><%= p.name %></td>
+		<td class="indextd"><%= link_to "Join table",p %></td>
 	</tr>
 	<%end%>
 </table>

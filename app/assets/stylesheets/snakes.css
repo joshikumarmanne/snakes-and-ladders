@@ -1,6 +1,9 @@
 html{
 	width: 1300px;
 }
+body{
+	background-image: url('/body.jpg');
+}
 .new_user{
 	margin-left: 712px;
 	margin-right: 90px;
@@ -66,6 +69,11 @@ background-color:#C77727;
 background-color: #10E9E6;}
 .tables tr:nth-child(odd) td:nth-child(odd) {
 background-color: #7B5CAF;}
+.indextd{
+	color:white;
+	font-weight: bold;
+	text-align: center;
+}
 
 #one {
 
@@ -146,12 +154,14 @@ background-color: #7B5CAF;}
 
 }
 #display{
+color: white;
 position: absolute;
 margin-top: 183px;
 margin-left: 49px;
 font-size: 30px;
 }
 #display1{
+color: white;
 position:absolute;
 margin-top: 296px;
 margin-left: 21px;
@@ -159,21 +169,31 @@ font-size: 25px;
 
 }
 #display2{
+color: white;
 position: absolute;
 margin-top: 23px;
 margin-left: 38px;
 font-size: 30px;
 }
 #display3{
+color: white;
 position: absolute;
 margin-top: 239px;
 margin-left: 8px;
 font-size: 30px;
 }
 #display4{
+color: white;
 position: absolute;
 margin-left: 1057px;
 margin-top: 24px;
 font-size: 30px;
 }
-
+.thumbnail{
+position: absolute;
+padding-left: 611px;
+padding-top: 66px;
+}
+.table{
+	position: absolute;
+}
