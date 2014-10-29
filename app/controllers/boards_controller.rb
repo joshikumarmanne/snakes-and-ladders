@@ -13,7 +13,6 @@ class BoardsController < ApplicationController
 				@boards = Board.all.order("created_at DESC")
 				render "index"
 			end
-
 	end
 	def show
 		@board = Board.find(params[:id])
